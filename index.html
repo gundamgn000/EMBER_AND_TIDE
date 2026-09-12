@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="EMBER & TIDE 海岸牛排館——讓太平洋的潮汐與炭火在餐桌相遇。">
+  <title>EMBER & TIDE｜海岸牛排館</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Manrope:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;600;700&family=Noto+Serif+TC:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%23171513'/%3E%3Cpath d='M14 40c10-2 12-15 18-25 2 10 15 16 15 28-4-7-10-10-15-15-2 8-7 12-18 12Z' fill='%23B66A3C'/%3E%3Cpath d='M12 47c13-5 26-5 40 0' stroke='%23596873' stroke-width='4' fill='none'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="noise"></div><div class="cursor-glow"></div>
+  <header class="site-header">
+    <a class="brand" href="index.html"><strong>EMBER &amp; TIDE</strong><small>Coastal Steakhouse</small></a>
+    <nav class="desktop-nav" aria-label="Primary">
+      <a class="active" href="index.html">首頁</a><a href="about.html">品牌故事</a><a href="menu.html">美味菜單</a>
+      <a href="#experience">用餐體驗</a><a href="#visit">餐廳資訊</a><a class="button" href="tel:+886225551988">電話訂位</a>
+    </nav>
+    <button class="nav-toggle" aria-label="開啟選單" aria-expanded="false"><span></span><span></span><span></span></button>
+  </header>
+  <nav class="mobile-nav" aria-label="手機版導覽"><a href="index.html">首頁</a><a href="about.html">品牌故事</a><a href="menu.html">美味菜單</a><a href="#experience">用餐體驗</a><a href="#visit">餐廳資訊</a></nav>
+
+  <main>
+    <section class="hero">
+      <div class="hero__media"><img src="assets/photo-steak.webp" alt="切片炙烤牛排與番茄、洋蔥配菜"></div>
+      <div class="hero__content reveal in-view">
+        <div class="eyebrow">Where Fire Meets the Coast</div>
+        <h1 class="display">海岸相遇，<br><em>炭火甦醒。</em></h1>
+        <p class="hero__sub">嚴選熟成肉品、當季海岸食材與恰到好處的炭火香氣，在太平洋岸邊展開一場沉穩而有張力的晚餐。</p>
+        <div class="hero__actions"><a class="button button--filled" href="menu.html">探索菜單</a><a class="button" href="#experience">感受空間</a></div>
+      </div>
+      <div class="hero__index"><span>01</span><i></i><span>04</span></div><div class="scroll-cue">向下探索</div>
+    </section>
+
+    <section class="manifesto"><div class="shell manifesto__grid reveal">
+      <div class="eyebrow">料理理念</div>
+      <blockquote>起於海風與鹽。<br>成於<span>炭火。</span><br>完整於餐桌。</blockquote>
+    </div></section>
+
+    <section class="story-scroll">
+      <article class="story-row">
+        <div class="story-row__image"><img loading="lazy" src="assets/photo-oysters.webp" alt="冰鎮生蠔佐檸檬與餐具"></div>
+        <div class="story-row__copy reveal"><span class="story-row__number">01</span><div class="eyebrow">潮汐 · The Tide</div><h2>由海岸決定食材。</h2><p>菜單從海岸線開始。冷水生蠔、富含礦物氣息的海藻，以及鄰近農場的時令作物，都在最有風味的時刻來到餐桌。</p><a class="text-link" href="about.html">了解食材故事 <span>→</span></a></div>
+      </article>
+      <article class="story-row story-row--reverse">
+        <div class="story-row__image"><img loading="lazy" src="assets/photo-fire.webp" alt="廚師在炭火烤爐上炙烤牛排"></div>
+        <div class="story-row__copy reveal"><span class="story-row__number">02</span><div class="eyebrow">炭火 · The Ember</div><h2>每一道火候都有理由。</h2><p>橡木與果木餘燼帶來深度，卻不掩蓋食材本味。每一塊肉都依照自身特性回溫、炙烤與靜置，而不是只依賴計時器。</p><a class="text-link" href="dish-detail.html?dish=ribeye">認識招牌主餐 <span>→</span></a></div>
+      </article>
+    </section>
+
+    <section class="signature"><div class="shell">
+      <div class="signature__head reveal"><div><div class="eyebrow">精選菜色</div><h2 class="section-title">海岸與炭火的<br>三種表情。</h2></div><a class="text-link" href="menu.html">查看完整菜單 <span>→</span></a></div>
+      <div class="dish-grid reveal">
+        <a class="dish-card" style="--dish-image:url('assets/photo-ribeye.webp')" href="dish-detail.html?dish=ribeye" aria-label="查看 45 日熟成炭火肋眼"><span class="dish-card__num">01</span><span class="eyebrow">炭火主餐</span><h3>45 日熟成炭火肋眼</h3><span class="dish-card__en">45-Day Ember Ribeye</span><p>焦香青蔥 · 海鹽 · 煙燻肉汁</p><span class="price">NT$ 1,980</span></a>
+        <a class="dish-card" style="--dish-image:url('assets/photo-oysters.webp')" href="dish-detail.html?dish=oysters" aria-label="查看北海岸生蠔"><span class="dish-card__num">02</span><span class="eyebrow">海岸鮮味</span><h3>北海岸生蠔</h3><span class="dish-card__en">Cold Coast Oysters</span><p>蘋果紅酒醋汁 · 雲杉油</p><span class="price">NT$ 720</span></a>
+        <a class="dish-card" style="--dish-image:url('assets/photo-cacao.webp')" href="dish-detail.html?dish=cacao" aria-label="查看煙燻可可"><span class="dish-card__num">03</span><span class="eyebrow">炭火甜點</span><h3>煙燻可可</h3><span class="dish-card__en">Smoked Cacao</span><p>沙棘 · 麥芽 · 竹炭</p><span class="price">NT$ 420</span></a>
+      </div>
+    </div></section>
+
+    <section class="experience" id="experience">
+      <div class="experience__copy reveal"><div class="eyebrow">用餐空間</div><h2 class="section-title">在海平線旁，<br>享用晚餐。</h2><p>當暮色吞沒海平線，炭火的光便成為空間主角。窗外是潮汐，室內是爐火，整間餐廳圍繞著同一種節奏展開。</p>
+        <div class="facts"><div class="fact"><small>座位</small><strong>共 48 席</strong></div><div class="fact"><small>營業日</small><strong>週二至週日</strong></div><div class="fact"><small>服裝建議</small><strong>休閒正式</strong></div></div>
+      </div>
+    </section>
+
+    <section class="visit" id="visit"><div class="shell visit__grid reveal">
+      <div><div class="eyebrow">餐廳資訊</div><h2 class="section-title">沿著海岸，<br>找到炭火。</h2><a class="button button--filled" href="tel:+886225551988">來電訂位</a></div>
+      <div class="visit__details"><div><h3>地址</h3><p>新北市北海岸濱海路 18 號<br>（概念展示地址）</p></div><div><h3>營業時間</h3><p>週二至週四 17:30–22:30<br>週五至週日 17:00–23:00</p></div></div>
+    </div></section>
+  </main>
+
+  <footer class="site-footer"><div class="footer__top"><p class="footer__statement">Come for the coast.<br><em>Stay for the fire.</em></p><div class="footer__links"><a href="about.html">品牌故事</a><a href="menu.html">美味菜單</a><a href="#experience">用餐體驗</a><a href="#visit">餐廳資訊</a></div></div><div class="footer__bottom"><span>© <span data-year></span> Ember &amp; Tide</span><span>餐廳品牌概念展示</span></div></footer>
+  <script src="app.js"></script>
+</body></html>
